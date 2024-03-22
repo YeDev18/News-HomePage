@@ -2,7 +2,7 @@ import Header from '../../component/Header';
 
 const Home = () => {
   return (
-    <div>
+    <div className="text-base">
       <Header />
     </div>
   );

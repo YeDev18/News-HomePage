@@ -1,1 +1,1 @@
-export const menuItems = ['Home', 'New', 'Popular', 'Trading', 'Categories'];
+export const menuItems CD ..= ['Home', 'New', 'Popular', 'Trading', 'Categories'];
