@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { menuItems } from '../../data';
-import { MaterialSymbolsClose, MaterialSymbolsMenu } from '../Icons';
+import { MaterialSymbolsClose, MaterialSymbolsMenu } from '../pre-/Icons';
 
 const Header = () => {
   const [open, setOpen] = useState(true);
@@ -40,7 +40,11 @@ const Header = () => {
         <h1 className="font-bold">W.</h1>
         <ul className="hidden gap-10 cursor-pointer md:flex ">
           {menuItems.map((item: string, index: number) => {
-            return <li key={index}>{item}</li>;
+            return (
+              <li key={index} className="transition-all hover:text-[#f15e50]">
+                {item}
+              </li>
+            );
           })}
         </ul>
         <button className="flex md:hidden" onClick={handleClick}>
