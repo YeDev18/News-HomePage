@@ -1,11 +1,15 @@
 import Img1 from '../../../assets/images/image-web-3-desktop.jpg';
+import Img2 from '../../../assets/images/image-web-3-mobile.jpg';
 import { newItems } from '../../../data';
 const Hero = () => {
   return (
     <section className="container max-w-auto px-4 flex flex-col gap-x-4 gap-y-8 lg:flex-row lg:px-8">
       <div className=" flex flex-col gap-y-1 lg:w-[65%]">
-        <div>
-          <img src={Img1} alt="" />
+        <div className="hidden md:flex ">
+          <img src={Img1} alt="image-web-3-desktop" />
+        </div>
+        <div className="flex md:hidden">
+          <img src={Img2} alt="image-web-3-desktop" />
         </div>
         <div className="flex flex-col justify-between py-4 lg:flex-row lg:gap-8">
           <h1 className=" text-[#00001a] text-[2.5rem] leading-[3.7rem] font-bold tracking-[0.01em] lg:text-[3.5rem]">

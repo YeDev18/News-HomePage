@@ -17,19 +17,23 @@ const Header = () => {
         className={
           open
             ? 'hidden'
-            : 'absolute w-screen h-screen bg-dark opacity-60 -z-10 md:hidden'
+            : 'fixed w-screen h-screen bg-dark opacity-60 overflow-hidden  z-10 md:hidden'
         }
       ></div>
       <div
         className={
           open
             ? 'hidden'
-            : 'absolute right-0 h-screen flex items-start bg-white w-8/12 -z-10 p-4 pt-32  md:hidden'
+            : 'fixed right-0 h-screen flex items-start overflow-hidden text-xl bg-white w-8/12 z-10 p-4 pt-32  md:hidden '
         }
       >
         <ul className="gap-6 cursor-pointer flex flex-col font-semibold text-darkBlue">
           {menuItems.map((item: string, index: number) => {
-            return <li key={index}>{item}</li>;
+            return (
+              <li key={index} className=" transition-all hover:text-[#f15e50]">
+                {item}
+              </li>
+            );
           })}
         </ul>
       </div>
@@ -47,7 +51,10 @@ const Header = () => {
             );
           })}
         </ul>
-        <button className="flex md:hidden" onClick={handleClick}>
+        <button
+          className="flex absolute right-4  z-1000 md:hidden"
+          onClick={handleClick}
+        >
           {open ? (
             <MaterialSymbolsMenu />
           ) : (
