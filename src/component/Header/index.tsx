@@ -12,9 +12,21 @@ const Header = () => {
   return (
     <nav className="flex justify-center">
       {/* Responsive  */}
-      {/* ------------------------------------------------------------------------ */}
-      <div className="absolute w-screen h-screen bg-dark opacity-60 -z-10 md:hidden"></div>
-      <div className="absolute right-0 h-screen flex items-start bg-white w-8/12 -z-10 p-4 pt-32  md:hidden">
+      {/*------------------------------------------------------------------------ */}
+      <div
+        className={
+          open
+            ? 'hidden'
+            : 'absolute w-screen h-screen bg-dark opacity-60 -z-10 md:hidden'
+        }
+      ></div>
+      <div
+        className={
+          open
+            ? 'hidden'
+            : 'absolute right-0 h-screen flex items-start bg-white w-8/12 -z-10 p-4 pt-32  md:hidden'
+        }
+      >
         <ul className="gap-6 cursor-pointer flex flex-col font-semibold text-darkBlue">
           {menuItems.map((item: string, index: number) => {
             return <li key={index}>{item}</li>;
@@ -23,6 +35,7 @@ const Header = () => {
       </div>
       {/* ------------------------------------------------------------------------ */}
       {/* Responsive  */}
+      {/* Desktop------------------------------------------------------------------------ */}
       <div className="container max-w-auto flex justify-between py-8 px-4 font-sans font-normal lg:p-8">
         <h1 className="font-bold">W.</h1>
         <ul className="hidden gap-10 cursor-pointer md:flex ">
@@ -38,6 +51,7 @@ const Header = () => {
           )}
         </button>
       </div>
+      {/* Desktop------------------------------------------------------------------------ */}
     </nav>
   );
 };

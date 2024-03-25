@@ -1,1 +1,7 @@
-export const menuItems CD ..= ['Home', 'New', 'Popular', 'Trading', 'Categories'];
+export const menuItems: Array<any> = [
+  'Home',
+  'New',
+  'Popular',
+  'Trading',
+  'Categories',
+];
