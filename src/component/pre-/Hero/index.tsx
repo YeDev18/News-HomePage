@@ -2,7 +2,7 @@ import Img1 from '../../../assets/images/image-web-3-desktop.jpg';
 import { newItems } from '../../../data';
 const Hero = () => {
   return (
-    <div className="container max-w-auto px-4 flex flex-col gap-x-4 gap-y-8 lg:flex-row lg:px-8">
+    <section className="container max-w-auto px-4 flex flex-col gap-x-4 gap-y-8 lg:flex-row lg:px-8">
       <div className=" flex flex-col gap-y-1 lg:w-[65%]">
         <div>
           <img src={Img1} alt="" />
@@ -44,7 +44,7 @@ const Hero = () => {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
