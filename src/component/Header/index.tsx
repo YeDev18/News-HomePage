@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { menuItems } from '../../data';
 import { MaterialSymbolsClose, MaterialSymbolsMenu } from '../pre-/Icons';
-
 const Header = () => {
   const [open, setOpen] = useState(true);
 
@@ -27,7 +26,7 @@ const Header = () => {
             : 'fixed right-0 h-screen flex items-start overflow-hidden text-xl bg-white w-8/12 z-10 p-4 pt-32  md:hidden '
         }
       >
-        <ul className="gap-6 cursor-pointer flex flex-col font-semibold text-darkBlue">
+        <ul className="gap-6 cursor-pointer flex flex-col font-semibold text-[#00001a]">
           {menuItems.map((item: string, index: number) => {
             return (
               <li key={index} className=" transition-all hover:text-[#f15e50]">
@@ -41,11 +40,16 @@ const Header = () => {
       {/* Responsive  */}
       {/* Desktop------------------------------------------------------------------------ */}
       <div className="container max-w-auto flex justify-between py-8 px-4 font-sans font-normal lg:p-8">
-        <h1 className="font-bold">W.</h1>
-        <ul className="hidden gap-10 cursor-pointer md:flex ">
+        <h1 className="font-extrabold  text-4xl font-['Rakkas'] text-[#00001a]">
+          W.
+        </h1>
+        <ul className="hidden gap-10 cursor-pointer md:flex">
           {menuItems.map((item: string, index: number) => {
             return (
-              <li key={index} className="transition-all hover:text-[#f15e50]">
+              <li
+                key={index}
+                className="transition-all hover:text-[#f15e50] text-[#00001a]"
+              >
                 {item}
               </li>
             );
