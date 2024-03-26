@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { menuItems } from '../../data';
 import { MaterialSymbolsClose, MaterialSymbolsMenu } from '../pre-/Icons';
 import logo from '../../assets/images/logo.svg';
-import open from '../../assets/images/icon-menu.svg';
 const Header = () => {
   const [open, setOpen] = useState(true);
 
