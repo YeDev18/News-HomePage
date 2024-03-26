@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { menuItems } from '../../data';
 import { MaterialSymbolsClose, MaterialSymbolsMenu } from '../pre-/Icons';
+import logo from '../../assets/images/logo.svg';
+import open from '../../assets/images/icon-menu.svg';
 const Header = () => {
   const [open, setOpen] = useState(true);
 
@@ -40,9 +42,7 @@ const Header = () => {
       {/* Responsive  */}
       {/* Desktop------------------------------------------------------------------------ */}
       <div className="container max-w-auto flex justify-between py-8 px-4 font-sans font-normal lg:p-8">
-        <h1 className="font-extrabold  text-4xl font-['Rakkas'] text-[#00001a]">
-          W.
-        </h1>
+        <img src={logo} />
         <ul className="hidden gap-10 cursor-pointer md:flex">
           {menuItems.map((item: string, index: number) => {
             return (
@@ -55,6 +55,7 @@ const Header = () => {
             );
           })}
         </ul>
+
         <button
           className="flex absolute right-4  z-1000 md:hidden"
           onClick={handleClick}
