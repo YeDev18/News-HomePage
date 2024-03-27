@@ -29,19 +29,22 @@ export const newItems: Array<any> = [
 
 export const features: Array<any> = [
   {
-    image: img1,
-    h1: 'Reviving Retro PCS',
-    paragraph: 'What When Old PCs are given modern upgrades?',
-  },
-  {
     image: img2,
     h1: 'Top 10 Laptops of 2022',
     paragraph: 'Our best picks for various needs and budgets.',
+    alt: 'image-retro-pcs',
   },
   {
     image: img3,
     h1: 'The Growth Of Gaming',
     paragraph: 'How pandemic has sparked fresh opportunities.',
+    alt: 'image-top-laptops',
+  },
+  {
+    image: img1,
+    h1: 'Reviving Retro PCS',
+    paragraph: 'What When Old PCs are given modern upgrades?',
+    alt: 'image-gaming-growth',
   },
 ];
 //   {

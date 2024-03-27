@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="flex justify-center">
+    <nav className="flex justify-center bg-[#FAFCFF]">
       {/* Responsive  */}
       {/*------------------------------------------------------------------------ */}
       <div

@@ -7,12 +7,16 @@ const Feature = () => {
         return (
           <div key={index} className="flex  lg:flex-row gap-x-8 ">
             <div className=" ">
-              <img src={feature.image} className="w-[7rem] h-[auto ]" />
+              <img
+                src={feature.image}
+                alt={feature.alt}
+                className="w-[7rem] h-[auto ]"
+              />
             </div>
             <div className="w-[50%] flex flex-col justify-between">
-              <h1 className="text-5xl font-bold text-[#c5c6ce]">
+              <h3 className="text-5xl font-bold text-[#c5c6ce]">
                 0{index + 1}
-              </h1>
+              </h3>
               <a className="text-[#00001a] leading-[1.5rem] tracking-[0.01em]  font-extrabold  transition-all text-base hover:text-[#f15e50] hover:cursor-pointer">
                 {feature.h1}
               </a>

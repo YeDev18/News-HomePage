@@ -3,7 +3,7 @@ import Feature from '../pre-/Feature';
 
 const Main = () => {
   return (
-    <main className="flex flex-col justify-center items-center">
+    <main className="flex flex-col justify-center items-center bg-[#FAFCFF]">
       <Hero />
       <Feature />
     </main>

@@ -29,9 +29,9 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex flex-col gap-8 bg-[#00001a] p-8 h-fit ">
-        <h1 className="text-[#e9ab53] text-4xl font-bold tracking-[0.01em] ">
+        <h2 className="text-[#e9ab53] text-4xl font-bold tracking-[0.01em] ">
           New
-        </h1>
+        </h2>
         <div className="flex flex-col gap-8 lg:gap-4 ">
           {newItems.map((newItem: any, index: number) => {
             return (
@@ -39,9 +39,9 @@ const Hero = () => {
                 key={index}
                 className="py-8 flex flex-col gap-2 leading-[1.5rem] tracking-[0.01em] even:border-y-[0.1px] even:border-[#fffdfa67]"
               >
-                <h1 className="text-[#fffdfa] text-xl font-bold">
+                <h3 className="text-[#fffdfa] text-xl font-bold">
                   {newItem.h1}
-                </h1>
+                </h3>
                 <p className="text-[#c5c6ce]">{newItem.paragraph}</p>
               </div>
             );
