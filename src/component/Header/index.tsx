@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { menuItems } from '../../data';
 import { MaterialSymbolsClose, MaterialSymbolsMenu } from '../pre-/Icons';
-import logo from '../../assets/images/logo.svg';
 
 import GoodLogo from '../../assets/images/GoodLogo.svg';
 const Header = () => {
