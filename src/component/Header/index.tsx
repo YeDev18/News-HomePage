@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { menuItems } from '../../data';
 import { MaterialSymbolsClose, MaterialSymbolsMenu } from '../pre-/Icons';
 import logo from '../../assets/images/logo.svg';
+
+import GoodLogo from '../../assets/images/GoodLogo.svg';
 const Header = () => {
   const [open, setOpen] = useState(true);
 
@@ -41,7 +43,7 @@ const Header = () => {
       {/* Responsive  */}
       {/* Desktop------------------------------------------------------------------------ */}
       <div className="container max-w-auto flex justify-between py-8 px-4 font-sans font-normal lg:p-8">
-        <img src={logo} alt="Logo" />
+        <img src={GoodLogo} alt="Logo" />
         <ul className="hidden gap-10 cursor-pointer md:flex">
           {menuItems.map((item: string, index: number) => {
             return (
